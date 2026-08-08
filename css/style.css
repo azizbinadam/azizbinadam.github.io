@@ -40,102 +40,145 @@ body{
 
 /* Navigation */
 
-nav{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:24px 10%;
-
-    border-bottom:1px solid var(--border);
-
+nav {
+    border-bottom: 1px solid var(--border);
+    background: var(--background);
 }
 
-.logo{
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    font-family:'Poppins',sans-serif;
-
-    font-size:22px;
-
-    font-weight:700;
-
+    min-height: 80px;
 }
 
-nav ul{
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
 
-    display:flex;
-
-    list-style:none;
-
-    gap:30px;
-
+    color: var(--text);
+    text-decoration: none;
 }
 
-nav a{
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
 
-    text-decoration:none;
+    list-style: none;
+}
 
-    color:#374151;
+.nav-links a {
+    color: var(--secondary);
+    text-decoration: none;
 
-    font-weight:500;
+    font-size: 14px;
+    font-weight: 500;
 
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.menu-toggle {
+    display: none;
+
+    border: none;
+    background: none;
+
+    font-size: 28px;
+    color: var(--text);
+
+    cursor: pointer;
 }
 
 /* Hero */
 
-.hero{
-
-    max-width:1100px;
-
-    margin:auto;
-
-    padding:120px 10%;
-
+.hero {
+    padding: 120px 0;
 }
 
-.intro{
+.hero-container {
+    display: grid;
 
-    color:var(--primary);
+    grid-template-columns: 1.4fr 0.8fr;
 
-    font-weight:600;
+    align-items: center;
 
-    margin-bottom:10px;
-
+    gap: 80px;
 }
 
-h1{
-
-    font-family:'Poppins',sans-serif;
-
-    font-size:56px;
-
-    margin-bottom:15px;
-
+.hero-content {
+    max-width: 700px;
 }
 
-h2{
+.intro {
+    color: var(--primary);
 
-    font-size:28px;
+    font-size: 15px;
+    font-weight: 600;
 
-    color:var(--secondary);
-
-    margin-bottom:25px;
-
+    margin-bottom: 12px;
 }
 
-.description{
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
 
-    max-width:650px;
+    font-size: clamp(48px, 6vw, 72px);
+    line-height: 1.05;
 
-    line-height:1.8;
+    margin-bottom: 20px;
+}
 
-    font-size:18px;
+.hero h2 {
+    color: var(--secondary);
 
-    margin-bottom:40px;
+    font-size: 24px;
+    font-weight: 500;
 
+    line-height: 1.5;
+
+    margin-bottom: 28px;
+}
+
+.description {
+    max-width: 650px;
+
+    color: var(--secondary);
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+    margin-bottom: 40px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.image-placeholder {
+    width: 320px;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    color: var(--secondary);
+
+    font-size: 14px;
 }
 
 /* Buttons */
@@ -213,5 +256,120 @@ section{
     line-height:1.8;
 
     margin-bottom:50px;
+
+}
+
+/* 
+   Responsive Design
+ */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    .nav-container {
+        min-height: 70px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 12vw, 56px);
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+
+    /* Hero Image */
+
+    .hero-image {
+        justify-content: flex-start;
+    }
+
+    .image-placeholder {
+        width: 260px;
+        height: 320px;
+    }
+
+
+    /* Sections */
+
+    section {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+        .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 0;
+
+        background: var(--background);
+
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+
+        width: 100%;
+
+        padding: 16px 5%;
+
+        font-size: 15px;
+    }
+
+    .menu-toggle {
+    display: block;
+    }
 
 }
