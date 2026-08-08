@@ -162,23 +162,15 @@ nav {
     justify-content: center;
 }
 
-.image-placeholder {
+.profile-image {
     width: 320px;
     height: 400px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: var(--surface);
-
-    border: 1px solid var(--border);
+    object-fit: cover;
 
     border-radius: 20px;
 
-    color: var(--secondary);
-
-    font-size: 14px;
+    display: block;
 }
 
 /* Buttons */
@@ -314,9 +306,9 @@ section{
         justify-content: flex-start;
     }
 
-    .image-placeholder {
-        width: 260px;
-        height: 320px;
+    .profile-image {
+    width: 260px;
+    height: 320px;
     }
 
 
