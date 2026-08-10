@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Solar Tracking System | Aziz Bin Adam</title>
+
+    <meta
+        name="description"
+        content="Solar Tracking System — an ESP32-C3-based, time-scheduled solar panel tracker with accelerometer feedback and IoT monitoring, presented at InnoSTRE 2022."
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="container nav-container">
+
+            
+            <a href="../index.html" class="logo">
+            
+                Aziz Bin Adam
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="../index.html#about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#projects">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#experience">
+                        Experience
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#skills">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#achievements">
+                        Achievements
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Project Hero -->
+
+    <main>
+
+        <section class="project-hero">
+
+            <div class="container">
+
+                
+                <a href="../index.html#projects" class="back-link">
+                    ← Back to Projects
+                </a>
+
+
+                <p class="intro">
+                    Diploma Final Year Project · Embedded Systems · IoT
+                </p>
+
+
+                <h1>
+                    Solar Tracking System
+                </h1>
+
+                <figure class="project-media-item">
+
+                    <img
+                        src="../images/solar-tracking/innostre22-pass.jpg"
+                        alt="InnoSTRE2022 Presenter Pass"
+                    >
+
+                    <figcaption>
+                        Presenter pass for InnoSTRE 2022, where the project was presented
+                        as a proof of concept during the development phase.
+                    </figcaption>
+
+                </figure>
+
+                <p class="project-lead">
+
+                    A time-scheduled solar tracking system developed as a
+                    Diploma Final Year Project, combining automated panel
+                    positioning, sensor feedback, and Wi-Fi-based monitoring.
+                    An early proof-of-concept version was presented at
+                    InnoSTRE 2022 while the physical prototype was still
+                    under development, with development continuing toward
+                    the completed prototype.
+
+                </p>
+
+
+                <div class="project-meta">
+
+                    <div>
+
+                        <span class="meta-label">
+                            Project Type
+                        </span>
+
+                        <span class="meta-value">
+                            Diploma Final Year Project
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <span class="meta-label">
+                            Project Milestone
+                        </span>
+
+                        <span class="meta-value">
+                            InnoSTRE 2022 · Proof-of-Concept Presentation
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <span class="meta-label">
+                            Project Outcome
+                        </span>
+
+                        <span class="meta-value">
+                            Completed Physical Prototype
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Overview -->
+
+        <section class="project-section">
+            <div class="container">
+
+                <div class="project-layout">
+
+                    <div class="project-main">
+
+                        <p class="section-eyebrow">Overview</p>
+
+                        <h2>Keeping a solar panel facing the sun</h2>
+
+                        <p>
+                            Most fixed-position PV panels lose efficiency
+                            because the sun moves from east to west across
+                            the day while the panel stays still. This
+                            project builds a solar tracker that repositions
+                            a panel on a time-based schedule, checks whether
+                            it actually reached the target angle using an
+                            onboard accelerometer, and reports live status
+                            to a phone app over Wi-Fi.
+                        </p>
+
+                        <p>
+                            The system is built around an ESP32-C3
+                            microcontroller as its central controller,
+                            driving a stepper motor and reading from three
+                            separate sensors, with a manual override for
+                            when the automatic positioning needs correcting.
+                        </p>
+
+                    </div>
+
+                    <aside class="project-sidebar">
+
+                        <div class="info-block">
+                            <h3>Author</h3>
+                            <p>Aziz Bin Adam</p>
+                        </div>
+
+                        <div class="info-block">
+                            <h3>Supervision</h3>
+                            <p>
+                                Mohd Yazid Bin Mohd Anas Khan,
+                                Nur Farahiah Binti Ibrahim
+                            </p>
+                        </div>
+
+                        <div class="info-block">
+                            <h3>Venue</h3>
+                            <p>
+                                Borneo Convention Centre Kuching (BCCK),
+                                InnoSTRE 2022 (25–27 October 2022)
+                            </p>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- InnoSTRE 2022 -->
+
+        <section class="project-section project-section-alt">
+
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    Project Milestone
+                </p>
+
+                <h2>
+                    InnoSTRE 2022 — Proof of Concept
+                </h2>
+
+                <p class="section-description">
+
+                    During the development of this Diploma Final Year Project,
+                    the proposed solar tracking system was presented at
+                    InnoSTRE 2022. At this stage, the physical prototype was
+                    still under development, so the presentation focused on
+                    the project's concept, system design, and intended
+                    implementation.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Why Solar Tracking -->
+
+        <section class="project-section project-section-alt">
+            <div class="container">
+
+                <div class="project-layout">
+
+                    <div class="project-main">
+
+                        <p class="section-eyebrow">The Problem</p>
+
+                        <h2>Why solar tracking?</h2>
+
+                        <p>
+                            Most fixed-position PV panels remain in one orientation as the sun
+                            moves across the sky, limiting the amount of sunlight they can
+                            capture throughout the day. In addition, the tracking system itself
+                            can continue consuming power outside useful operating conditions
+                            if it is not designed to enter a low-power state.
+                        </p>
+
+                        <p>
+                            This project addresses both problems together:
+                            a panel that repositions itself to track the
+                            sun's general path through the day, and a
+                            system that drops into sleep mode when tracking
+                            isn't worthwhile, rather than running
+                            continuously regardless of conditions.
+                        </p>
+
+                    </div>
+
+                    <aside class="project-sidebar">
+
+                        <div class="info-block">
+                            <h3>Challenge</h3>
+                            <p>
+                                Fixed-position panels lose efficiency as the
+                                sun moves, and keep drawing power even when
+                                conditions don't justify it.
+                            </p>
+                        </div>
+
+                        <div class="info-block">
+                            <h3>Proposed Direction</h3>
+                            <p>
+                                Reposition the panel on a daily schedule,
+                                verified by sensor feedback, and sleep
+                                automatically outside useful daylight hours.
+                            </p>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- System Architecture -->
+
+        <section class="project-section">
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    System Architecture
+                </p>
+
+                <h2>
+                    Sense, decide, actuate, report
+                </h2>
+
+                <p class="section-description">
+
+                    The system is structured around the ESP32-C3 as its
+                    central controller, coordinating three sensor inputs,
+                    one actuator, and two output channels.
+
+                </p>
+
+                <div class="arch-diagram">
+
+                    <p class="arch-label">
+                        System Layers
+                    </p>
+
+                    <div class="arch-layers">
+
+                        <div class="arch-layer">
+
+                            <span class="arch-layer-tag">
+                                Sensing
+                            </span>
+
+                            <div>
+                                <h3>Light, Position &amp; Power Sensors</h3>
+                                <p>
+                                    A TEMT6000 ambient light sensor measures
+                                    lux levels to determine daylight
+                                    conditions. An MPU6050 accelerometer
+                                    reads the panel's actual tilt angle, so
+                                    the system knows when it has really
+                                    reached its target position. An INA219
+                                    sensor measures current, voltage, and
+                                    power at both the panel and the battery.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="arch-connector">
+                            ↓ sensor readings
+                        </div>
+
+                        <div class="arch-layer">
+
+                            <span class="arch-layer-tag">
+                                Control
+                            </span>
+
+                            <div>
+                                <h3>ESP32-C3 Microcontroller</h3>
+                                <p>
+                                    The ESP32-C3 acts as the system's brain,
+                                    checking the time of day and sensor
+                                    readings to decide the panel's target
+                                    position. A rotary encoder allows manual
+                                    correction if the automatic angle drifts.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="arch-connector">
+                            ↓ motor control signal
+                        </div>
+
+                        <div class="arch-layer">
+
+                            <span class="arch-layer-tag">
+                                Actuation
+                            </span>
+
+                            <div>
+                                <h3>Stepper Motor &amp; Driver</h3>
+                                <p>
+                                    A 28BYJ-48 stepper motor, driven through
+                                    a ULN2003 driver, adjusts the panel's
+                                    angle until the accelerometer confirms
+                                    the target position has been reached.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="arch-connector">
+                            ↓ over Wi-Fi
+                        </div>
+
+                        <div class="arch-layer">
+
+                            <span class="arch-layer-tag">
+                                Monitoring
+                            </span>
+
+                            <div>
+                                <h3>OLED Display &amp; Blynk App</h3>
+                                <p>
+                                    A 0.96-inch OLED shows angle, voltage,
+                                    current, and power readings on the
+                                    device itself, while the Blynk app
+                                    mirrors the same data remotely and
+                                    sends notifications when the system
+                                    enters or exits sleep mode.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <p class="arch-label">
+                        Processing Workflow
+                    </p>
+
+                    <div class="arch-workflow">
+
+                        <div class="arch-module">
+                            <span class="arch-module-num">01</span>
+                            <h3>Startup &amp; Mode Select</h3>
+                            <p>
+                                On power-up, the stepper resets to its
+                                initial position and the system checks
+                                whether it should run in automatic or
+                                manual (encoder-controlled) mode.
+                            </p>
+                        </div>
+
+                        <div class="arch-module">
+                            <span class="arch-module-num">02</span>
+                            <h3>Time-Based Positioning</h3>
+                            <p>
+                                In automatic mode, the panel is stepped to
+                                one of four scheduled positions depending on
+                                the time of day, shown below.
+                            </p>
+                        </div>
+
+                        <div class="arch-module">
+                            <span class="arch-module-num">03</span>
+                            <h3>Angle Verification</h3>
+                            <p>
+                                The accelerometer confirms whether the panel
+                                actually reached its target angle, rather
+                                than assuming the motor command succeeded.
+                            </p>
+                        </div>
+
+                        <div class="arch-module">
+                            <span class="arch-module-num">04</span>
+                            <h3>Reporting &amp; Sleep</h3>
+                            <p>
+                                Readings are pushed to the OLED and Blynk.
+                                Outside operating hours, the system drops
+                                into sleep mode to conserve power.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Daily Positioning Schedule -->
+
+        <section class="project-section project-section-alt">
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    Daily Positioning Schedule
+                </p>
+
+                <h2>
+                    How the panel moves through the day
+                </h2>
+
+                <p class="section-description">
+
+                    Rather than tracking the sun continuously, the panel
+                    steps between four fixed positions on a schedule, based
+                    on the hardware test results recorded for the project.
+
+                </p>
+
+                <div class="results-table-block">
+
+                    <table class="results-table">
+                        <thead>
+                            <tr>
+                                <th>Time Window</th>
+                                <th>Panel Behaviour</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8:00 a.m. – 11:59 a.m.</td>
+                                <td>Positioned for morning sun</td>
+                            </tr>
+                            <tr>
+                                <td>12:00 p.m.</td>
+                                <td>Positioned for midday sun</td>
+                            </tr>
+                            <tr>
+                                <td>1:00 p.m. – 4:59 p.m.</td>
+                                <td>Positioned for afternoon sun</td>
+                            </tr>
+                            <tr>
+                                <td>5:00 p.m. – 7:59 a.m.</td>
+                                <td>Parked overnight, system in sleep mode</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Implementation -->
+
+        <section class="project-section">
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    Implementation
+                </p>
+
+                <h2>
+                    Hardware components
+                </h2>
+
+                <p class="section-description">
+
+                    The build combines three sensor types with a single
+                    microcontroller for control, a stepper motor for
+                    actuation, and two channels for monitoring.
+
+                </p>
+
+                <div class="technology-grid">
+
+                    <div class="technology-card">
+                        <h3>Sensing &amp; Feedback</h3>
+                        <ul>
+                            <li>TEMT6000 ambient light sensor for daylight and lux readings.</li>
+                            <li>MPU6050 accelerometer for actual panel tilt feedback.</li>
+                            <li>INA219 for panel and battery current, voltage, and power.</li>
+                        </ul>
+                    </div>
+
+                    <div class="technology-card">
+                        <h3>Control &amp; Override</h3>
+                        <ul>
+                            <li>ESP32-C3 microcontroller, programmed in Arduino IDE.</li>
+                            <li>Rotary encoder for manual angle correction.</li>
+                        </ul>
+                    </div>
+
+                    <div class="technology-card">
+                        <h3>Actuation &amp; Monitoring</h3>
+                        <ul>
+                            <li>28BYJ-48 stepper motor driven via a ULN2003 driver.</li>
+                            <li>0.96-inch OLED display and the Blynk app over Wi-Fi.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Hardware Build -->
+
+        <section class="project-section project-section-alt">
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    Hardware Build
+                </p>
+
+                <h2>
+                    From breadboard to enclosed prototype
+                </h2>
+
+                <p class="section-description">
+
+                    After the initial proof-of-concept stage, development continued
+                    toward the physical implementation of the system. The circuit
+                    was first tested on a breadboard before being fitted into a
+                    weatherproof casing for the final prototype.
+
+                </p>
+
+                <div class="project-media-grid">
+
+                    <figure class="project-media-item">
+
+                        <img
+                            src="../images/solar-tracking/breadboard-circuit.png"
+                            alt="Solar tracking system circuit mounted on a breadboard during testing"
+                        >
+
+                        <figcaption>
+                            Circuit under test on a breadboard before final assembly.
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="project-media-item">
+
+                        <img
+                            src="../images/solar-tracking/final-prototype.png"
+                            alt="Completed solar tracking system prototype in its weatherproof casing"
+                        >
+
+                        <figcaption>
+                            The completed prototype, housed to protect components from weather.
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Known Limitations -->
+
+        <section class="project-section">
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    Known Limitations
+                </p>
+
+                <h2>
+                    Where the build ran into real constraints
+                </h2>
+
+                <p class="section-description">
+
+                    Several components didn't behave as originally planned,
+                    and the final build reflects the workarounds that came
+                    out of that.
+
+                </p>
+
+                <div class="limitations-note">
+                    <h4>Component and tooling issues</h4>
+                    <p>
+                        The originally planned BH1750 light sensor turned
+                        out to be incompatible with the ESP32-C3 and was
+                        replaced with a TEMT6000, which needs a mathematical
+                        conversion to derive a lux value rather than
+                        reading it directly. The ESP32-C3 also crashed when
+                        running the latest Arduino IDE (2.0.3); the same
+                        code ran without issue on an Arduino UNO, which was
+                        used to isolate the problem during development.
+                        Separately, the stepper motor heats up under load,
+                        reducing its efficiency over time, and the
+                        accelerometer's readings degrade in accuracy the
+                        longer it runs.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Recommendations -->
+
+        <section class="project-section project-section-alt">
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    Recommendations
+                </p>
+
+                <h2>
+                    What would come next
+                </h2>
+
+                <p class="section-description">
+
+                    The project report closes with three directions for
+                    improving the prototype further.
+
+                </p>
+
+                <div class="learning-list">
+
+                    <div>
+                        <strong>01</strong>
+                        <p>
+                            Add a rain-detection system to trigger a
+                            protective covering mechanism during wet
+                            weather.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <p>
+                            Add remote motor control, so the panel angle
+                            can be adjusted online instead of requiring the
+                            encoder in person.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <p>
+                            Improve build durability with more
+                            weather-resistant components and materials.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Reflection -->
+
+        <section class="project-section">
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    Reflection
+                </p>
+
+                <h2>
+                    What I Learned
+                </h2>
+
+                <p class="section-description">
+
+                    This project gave me hands-on experience with embedded
+                    systems and IoT, including working through hardware
+                    that didn't behave the way the datasheet suggested it
+                    should.
+
+                </p>
+
+                <div class="learning-list">
+
+                    <div>
+                        <strong>01</strong>
+                        <p>
+                            Diagnosing a microcontroller-software
+                            incompatibility by isolating it on different
+                            hardware before assuming the code was at fault.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <p>
+                            Substituting a component mid-project (TEMT6000
+                            for BH1750) and adjusting the software to work
+                            around what the new part could and couldn't do
+                            directly.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <p>
+                            Verifying actuator output with an independent
+                            sensor, rather than trusting that a motor
+                            command was executed correctly.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Navigation -->
+
+        <section class="project-next">
+
+            <div class="container">
+
+                <p>
+                    More Projects
+                </p>
+
+                <a href="../index.html#projects">
+                    ← Back to Projects
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
