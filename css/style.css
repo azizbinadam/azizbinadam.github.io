@@ -432,6 +432,351 @@ section{
 }
 
 /*
+   Achievements
+*/
+
+/* Achievement Groups */
+
+.achievement-group {
+    margin-top: 60px;
+}
+
+.achievement-group:first-of-type {
+    margin-top: 50px;
+}
+
+.achievement-group-heading {
+    margin-bottom: 30px;
+}
+
+.achievement-group-label {
+    color: var(--primary) !important;
+
+    font-size: 13px !important;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.04em;
+
+    margin-bottom: 8px !important;
+}
+
+.achievement-group-heading h3 {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 24px;
+
+    line-height: 1.3;
+
+    color: var(--text);
+}
+
+
+/* Awards Grid */
+
+.achievement-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+
+/* Achievement Card */
+
+.achievement-card {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 30px;
+
+    background: var(--background);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(17, 24, 39, 0.07);
+}
+
+
+/* Achievement Icon */
+
+.achievement-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 24px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    color: var(--primary);
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+/* Achievement Content */
+
+.achievement-content {
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.achievement-type {
+    color: var(--primary) !important;
+
+    font-size: 12px !important;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.03em;
+
+    margin-bottom: 8px !important;
+}
+
+.achievement-content h4 {
+    font-family: 'Poppins', sans-serif;
+
+    color: var(--text);
+
+    font-size: 19px;
+
+    line-height: 1.4;
+
+    margin-bottom: 8px;
+}
+
+.achievement-issuer {
+    color: var(--secondary) !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.6 !important;
+
+    margin-bottom: 18px !important;
+}
+
+.achievement-description {
+    color: var(--secondary) !important;
+
+    font-size: 14px !important;
+
+    line-height: 1.7 !important;
+
+    margin-bottom: 24px !important;
+}
+
+
+/* Achievement Metadata */
+
+.achievement-meta {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: auto;
+
+    padding-top: 18px;
+
+    border-top: 1px solid var(--border);
+}
+
+.achievement-meta span {
+    color: var(--secondary);
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+.achievement-meta span + span {
+    padding-left: 9px;
+
+    border-left: 1px solid var(--border);
+}
+
+
+/* Certifications */
+
+.certifications-group {
+    margin-top: 90px;
+}
+
+.certification-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.certification-card {
+    padding: 26px 28px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.certification-card:hover {
+    border-color: var(--primary);
+
+    transform: translateY(-2px);
+}
+
+
+/* Certification Header */
+
+.certification-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 16px;
+}
+
+.certification-category {
+    color: var(--primary);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.04em;
+}
+
+.certification-year {
+    color: var(--secondary);
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+
+/* Certification Content */
+
+.certification-card h4 {
+    font-family: 'Poppins', sans-serif;
+
+    color: var(--text);
+
+    font-size: 17px;
+
+    line-height: 1.45;
+
+    margin-bottom: 7px;
+}
+
+.certification-card > p {
+    color: var(--secondary);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 16px;
+}
+
+.certification-status {
+    display: inline-block;
+
+    color: var(--secondary);
+
+    font-size: 11px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid var(--border);
+}
+
+
+/* Wide Certification */
+
+.certification-card-wide {
+    grid-column: span 2;
+}
+
+
+/* Google Coursework List */
+
+.certification-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 18px;
+
+    padding-top: 16px;
+
+    border-top: 1px solid var(--border);
+}
+
+.certification-list span {
+    padding: 6px 9px;
+
+    background: var(--background);
+
+    border: 1px solid var(--border);
+
+    border-radius: 6px;
+
+    color: var(--secondary);
+
+    font-size: 11.5px;
+
+    line-height: 1.4;
+}
+
+/*
    Projects
 */
 
@@ -981,6 +1326,32 @@ section{
 
     .skill-card {
         padding: 26px;
+    }
+
+    /* Achievements */
+
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-card {
+        padding: 26px;
+    }
+
+    .certifications-group {
+        margin-top: 65px;
+    }
+
+    .certification-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certification-card-wide {
+        grid-column: span 1;
+    }
+
+    .certification-top {
+        align-items: flex-start;
     }
 
 }
