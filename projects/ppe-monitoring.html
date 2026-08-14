@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Real-Time PPE Compliance Monitoring System | Aziz Bin Adam
+    </title>
+
+    <meta
+        name="description"
+        content="Real-Time PPE Compliance Monitoring System — an academic AI and IoT project combining Raspberry Pi computer vision, cloud communication, and ESP32-based machine control."
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                Aziz Bin Adam
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="../index.html#about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#projects">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#experience">
+                        Experience
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#skills">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#achievements">
+                        Achievements
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Project Hero -->
+
+    <main>
+
+        <section class="project-hero">
+
+            <div class="container">
+
+
+                <a
+                    href="../index.html#projects"
+                    class="back-link"
+                >
+                    ← Back to Projects
+                </a>
+
+
+                <p class="intro">
+                    Integrated Design Project · 2025
+                </p>
+
+
+                <h1>
+                    Real-Time PPE Compliance Monitoring System
+                </h1>
+
+
+                <p class="project-lead">
+
+                    An academic AI and IoT system that combines
+                    computer vision-based PPE monitoring with
+                    cloud-mediated communication and automated
+                    machine-control responses.
+
+                </p>
+
+
+                <div class="project-meta">
+
+
+                    <div>
+
+                        <span class="meta-label">
+                            Project Type
+                        </span>
+
+                        <span class="meta-value">
+                            University Capstone · Group Project
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="meta-label">
+                            Role
+                        </span>
+
+                        <span class="meta-value">
+                            Project Supervisor · Software &amp; System Design
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="meta-label">
+                            Date
+                        </span>
+
+                        <span class="meta-value">
+                            March – July 2025
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Overview -->
+
+        <section class="project-section">
+
+            <div class="container">
+
+
+                <div class="project-layout">
+
+
+                    <div class="project-main">
+
+                        <p class="section-eyebrow">
+                            Overview
+                        </p>
+
+                        <h2>
+                            Connecting computer vision with physical safety control
+                        </h2>
+
+
+                        <p>
+
+                            The Real-Time PPE Compliance Monitoring System was
+                            developed as a group project for EEE630 – Integrated
+                            Design Project at Universiti Teknologi MARA (UiTM).
+
+                        </p>
+
+
+                        <p>
+
+                            The system combines two main subsystems. The first
+                            uses a Raspberry Pi 5 and camera to perform
+                            AI-based PPE detection and tracking. The second
+                            uses an ESP32-based control unit to translate the
+                            resulting safety status into physical machine
+                            responses.
+
+                        </p>
+
+
+                        <p>
+
+                            Rather than treating computer vision as an isolated
+                            monitoring tool, the project explored how detection
+                            results could be communicated through an IoT
+                            architecture and used to trigger a machine-control
+                            response.
+
+                        </p>
+
+
+                    </div>
+
+
+                    <aside class="project-sidebar">
+
+
+                        <div class="info-block">
+
+                            <h3>
+                                Institution
+                            </h3>
+
+                            <p>
+                                Universiti Teknologi MARA (UiTM)
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-block">
+
+                            <h3>
+                                Course
+                            </h3>
+
+                            <p>
+                                EEE630 – Integrated Design Project
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-block">
+
+                            <h3>
+                                Project Team
+                            </h3>
+
+                            <p>
+                                Four students
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-block">
+
+                            <h3>
+                                Environment
+                            </h3>
+
+                            <p>
+                                Simulated industrial environment
+                            </p>
+
+                        </div>
+
+
+                    </aside>
+
+
+                </div>
+
+
+                <div class="limitations-note">
+
+                    <h4>
+                        Project scope
+                    </h4>
+
+                    <p>
+
+                        This was an academic group project developed and
+                        evaluated as part of EEE630. The documented testing
+                        was conducted in a simulated environment rather than
+                        representing a deployed industrial safety system.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Problem -->
+
+        <section class="project-section project-section-alt">
+
+            <div class="container">
+
+
+                <div class="project-layout">
+
+
+                    <div class="project-main">
+
+                        <p class="section-eyebrow">
+                            The Problem
+                        </p>
+
+
+                        <h2>
+                            From PPE detection to an actionable safety response
+                        </h2>
+
+
+                        <p>
+
+                            Manual PPE compliance monitoring can be
+                            inconsistent and reactive. A monitoring system
+                            that only identifies a violation still leaves
+                            the physical response to a human operator.
+
+                        </p>
+
+
+                        <p>
+
+                            The project therefore explored an integrated
+                            approach in which PPE detection could become part
+                            of an automated safety-control workflow.
+
+                        </p>
+
+
+                    </div>
+
+
+                    <aside class="project-sidebar">
+
+
+                        <div class="info-block">
+
+                            <h3>
+                                Challenge
+                            </h3>
+
+                            <p>
+
+                                Detect PPE compliance and proximity to
+                                hazardous equipment while connecting the
+                                result to a physical control response.
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-block">
+
+                            <h3>
+                                Proposed Approach
+                            </h3>
+
+                            <p>
+
+                                Combine edge computer vision, cloud-mediated
+                                communication, and embedded machine control
+                                into one modular system.
+
+                            </p>
+
+                        </div>
+
+
+                    </aside>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- System Architecture -->
+
+        <section class="project-section">
+
+            <div class="container">
+
+
+                <p class="section-eyebrow">
+                    System Architecture
+                </p>
+
+
+                <h2>
+                    A modular, cloud-mediated architecture
+                </h2>
+
+
+                <p class="section-description">
+
+                    The system was divided into an AI monitoring subsystem
+                    and a machine-control subsystem. Instead of directly
+                    wiring the two systems together, detection results were
+                    passed through a cloud-based data layer.
+
+                </p>
+
+
+                <div class="arch-diagram">
+
+
+                    <p class="arch-label">
+                        System Layers
+                    </p>
+
+
+                    <div class="arch-layers">
+
+
+                        <div class="arch-layer">
+
+                            <div class="arch-layer-tag">
+                                INPUT
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Camera Feed
+                                </h3>
+
+                                <p>
+
+                                    Raspberry Pi Camera V2 provides the
+                                    live video input used by the AI monitoring
+                                    subsystem.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="arch-connector">
+                            ↓ Video Stream
+                        </div>
+
+
+                        <div class="arch-layer">
+
+                            <div class="arch-layer-tag">
+                                AI PROCESSING
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Raspberry Pi 5 · YOLOv8 · DeepSORT
+                                </h3>
+
+                                <p>
+
+                                    PPE detection, person tracking,
+                                    proximity estimation, and violation
+                                    decision logic are performed on the
+                                    Raspberry Pi.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="arch-connector">
+                            ↓ Detection Status
+                        </div>
+
+
+                        <div class="arch-layer">
+
+                            <div class="arch-layer-tag">
+                                DATA LAYER
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Google Sheets · REST API
+                                </h3>
+
+                                <p>
+
+                                    Detection status is logged to Google
+                                    Sheets and made available to the
+                                    machine-control subsystem through
+                                    REST-based communication.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="arch-connector">
+                            ↓ Safety Status
+                        </div>
+
+
+                        <div class="arch-layer">
+
+                            <div class="arch-layer-tag">
+                                CONTROL
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    ESP32 Machine-Control Subsystem
+                                </h3>
+
+                                <p>
+
+                                    The ESP32 polls the cloud data and
+                                    translates the safety status into
+                                    motor, buzzer, and LED responses.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <p class="arch-note">
+
+                        Camera → Raspberry Pi → Google Sheets →
+                        REST API → ESP32 → Physical response
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Software -->
+
+        <section class="project-section project-section-alt">
+
+            <div class="container">
+
+
+                <p class="section-eyebrow">
+                    Software &amp; AI
+                </p>
+
+
+                <h2>
+                    Edge AI, tracking, dashboard and data integration
+                </h2>
+
+
+                <p class="section-description">
+
+                    The software stack combined computer vision,
+                    embedded computing, web technologies and cloud
+                    communication into a single workflow.
+
+                </p>
+
+
+                <div class="technology-grid">
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Computer Vision
+                        </h3>
+
+                        <p>
+
+                            YOLOv8 was used for object detection, while
+                            DeepSORT provided multi-object tracking so
+                            individuals could maintain consistent tracking
+                            identities across frames.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Raspberry Pi
+                        </h3>
+
+                        <p>
+
+                            The Raspberry Pi 5 acted as the edge-processing
+                            platform for camera input, AI inference,
+                            tracking and safety-status generation.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Dashboard
+                        </h3>
+
+                        <p>
+
+                            A Flask-based web dashboard provided a live
+                            interface for viewing annotated video and
+                            system status.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Cloud Logging
+                        </h3>
+
+                        <p>
+
+                            Google Sheets was used as the central logging
+                            layer for detection and safety-status data.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            REST/API Communication
+                        </h3>
+
+                        <p>
+
+                            The system used HTTP-based communication to
+                            make detection status available to the ESP32
+                            control subsystem.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Embedded Control
+                        </h3>
+
+                        <p>
+
+                            The ESP32 interpreted the received safety
+                            status and controlled the motor, buzzer,
+                            and indicator LEDs.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Workflow -->
+
+        <section class="project-section">
+
+            <div class="container">
+
+
+                <p class="section-eyebrow">
+                    System Workflow
+                </p>
+
+
+                <h2>
+                    From detection to machine response
+                </h2>
+
+
+                <p class="section-description">
+
+                    The workflow was structured so that the computer-vision
+                    subsystem could make a safety decision independently,
+                    while the machine-control subsystem handled the
+                    physical response.
+
+                </p>
+
+
+                <div class="arch-workflow">
+
+
+                    <div class="arch-module">
+
+                        <span class="arch-module-num">
+                            01
+                        </span>
+
+                        <h3>
+                            Capture
+                        </h3>
+
+                        <p>
+
+                            The camera provides a live video stream of the
+                            monitored environment.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="arch-module">
+
+                        <span class="arch-module-num">
+                            02
+                        </span>
+
+                        <h3>
+                            Detect &amp; Track
+                        </h3>
+
+                        <p>
+
+                            YOLOv8 detects relevant objects and DeepSORT
+                            maintains tracking identities.
+
+                        </p>
+
+                        <div class="arch-branches">
+
+                            <div class="arch-branch">
+
+                                <strong>
+                                    PPE
+                                </strong>
+
+                                Hardhat and vest compliance.
+
+                            </div>
+
+                            <div class="arch-branch">
+
+                                <strong>
+                                    Proximity
+                                </strong>
+
+                                Bounding-box-based proximity estimation.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="arch-module">
+
+                        <span class="arch-module-num">
+                            03
+                        </span>
+
+                        <h3>
+                            Log &amp; Communicate
+                        </h3>
+
+                        <p>
+
+                            The resulting safety status is logged and
+                            communicated through the cloud layer.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="arch-module">
+
+                        <span class="arch-module-num">
+                            04
+                        </span>
+
+                        <h3>
+                            Control
+                        </h3>
+
+                        <p>
+
+                            The ESP32 polls the status and applies the
+                            corresponding machine-control response.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <p class="arch-note">
+
+                    Detection → Decision → Cloud Log → Polling → Actuation
+
+                </p>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- My Contribution -->
+
+        <section class="project-section project-section-alt">
+
+            <div class="container">
+
+
+                <p class="section-eyebrow">
+                    My Contribution
+                </p>
+
+
+                <h2>
+                    Software, system workflow and team supervision
+                </h2>
+
+
+                <p class="section-description">
+
+                    The final report documents the project as a collaborative
+                    four-person team effort. The contribution breakdown below
+                    reflects my own involvement in the project rather than
+                    assigning individual authorship based on the report.
+
+                </p>
+
+
+                <div class="technology-grid">
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Software Development
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Developed software for the Raspberry Pi
+                                side of the system.
+                            </li>
+
+                            <li>
+                                Worked on the dashboard and software
+                                workflow.
+                            </li>
+
+                            <li>
+                                Worked with Google Sheets for system
+                                data logging.
+                            </li>
+
+                            <li>
+                                Implemented and integrated REST/API
+                                communication.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            System Workflow Design
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Designed the workflow describing how
+                                the system should operate.
+                            </li>
+
+                            <li>
+                                Developed flowchart-based representations
+                                of the system logic.
+                            </li>
+
+                            <li>
+                                Helped define the interaction between
+                                the AI, cloud, and machine-control
+                                subsystems.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Team Supervision
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Supervised the project team throughout
+                                development.
+                            </li>
+
+                            <li>
+                                Coordinated work across the software
+                                and hardware portions of the system.
+                            </li>
+
+                            <li>
+                                Contributed to keeping the overall
+                                system workflow aligned between
+                                subsystems.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div><br>
+
+
+                <div class="limitations-note">
+
+
+                    <h4>
+                        Contribution boundary
+                    </h4>
+
+
+                    <p>
+
+                        My primary contribution was on the software and
+                        system-workflow side. PCB design, 3D design,
+                        physical prototyping, and product assembly were
+                        primarily contributed by other team members and
+                        are therefore not presented here as my individual
+                        work.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Hardware -->
+
+        <section class="project-section">
+
+            <div class="container">
+
+
+                <p class="section-eyebrow">
+                    Hardware &amp; Control
+                </p>
+
+
+                <h2>
+                    Translating software decisions into physical responses
+                </h2>
+
+
+                <p class="section-description">
+
+                    The hardware subsystem provided the physical control
+                    layer of the project. It was implemented around an
+                    ESP32 microcontroller and connected to the machine
+                    response components.
+
+                </p>
+
+
+                <div class="technology-grid">
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            ESP32
+                        </h3>
+
+                        <p>
+
+                            The ESP32 acted as the control processor,
+                            polling the cloud-mediated safety status and
+                            translating it into GPIO-level actions.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Motor Control
+                        </h3>
+
+                        <p>
+
+                            A motor and driver circuit were used to
+                            represent the controlled machine response
+                            during the prototype demonstration.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Safety Indicators
+                        </h3>
+
+                        <p>
+
+                            Red and green LEDs together with an audible
+                            buzzer provided visual and audible indications
+                            of the system state.
+
+                        </p>
+
+                    </div>
+
+
+                </div><br>
+
+
+                <div class="limitations-note">
+
+
+                    <h4>
+                        Team implementation
+                    </h4>
+
+
+                    <p>
+
+                        The physical hardware implementation was a
+                        collaborative team effort. This section describes
+                        the subsystem to explain the complete system
+                        architecture rather than claim PCB design,
+                        3D modelling, or physical assembly as my
+                        individual contribution.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Testing -->
+
+        <section class="project-section project-section-alt">
+
+            <div class="container">
+
+
+                <p class="section-eyebrow">
+                    Testing &amp; Evaluation
+                </p>
+
+
+                <h2>
+                    Validating the end-to-end workflow
+                </h2>
+
+
+                <p class="section-description">
+
+                    The project was evaluated through defined PPE
+                    compliance scenarios and corresponding ESP32
+                    response states in a simulated environment.
+
+                </p>
+
+
+                <div class="results-stats">
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-value">
+                            3
+                        </div>
+
+                        <div class="stat-label">
+                            Defined PPE compliance test scenarios
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-value">
+                            3
+                        </div>
+
+                        <div class="stat-label">
+                            ESP32 response states evaluated
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-value">
+                            4
+                        </div>
+
+                        <div class="stat-label">
+                            Students in the project team
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-value">
+                            50
+                        </div>
+
+                        <div class="stat-label">
+                            Respondents in the stakeholder survey
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="findings-list">
+
+
+                    <div class="finding-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <p>
+
+                            <strong>
+                                PPE monitoring:
+                            </strong>
+
+                            The AI subsystem was evaluated against
+                            defined PPE-compliance scenarios involving
+                            workers and required protective equipment.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="finding-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <p>
+
+                            <strong>
+                                Machine response:
+                            </strong>
+
+                            The ESP32 subsystem was evaluated across
+                            defined control states corresponding to
+                            the detected safety condition.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="finding-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <p>
+
+                            <strong>
+                                End-to-end demonstration:
+                            </strong>
+
+                            The completed system demonstrated the
+                            sequence from detection and dashboard
+                            visualization through cloud logging and
+                            physical actuation.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="limitations-note">
+
+
+                    <h4>
+                        Evaluation scope
+                    </h4>
+
+
+                    <p>
+
+                        The project report does not provide a final
+                        overall accuracy, precision, recall, or mAP
+                        figure suitable for presenting as a headline
+                        performance result. Accordingly, no unsupported
+                        accuracy percentage is claimed here.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Technical Stack -->
+
+        <section class="project-section">
+
+            <div class="container">
+
+
+                <p class="section-eyebrow">
+                    Technologies
+                </p>
+
+
+                <h2>
+                    Technical stack
+                </h2>
+
+
+                <div class="technology-grid">
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            AI &amp; Computer Vision
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                YOLOv8
+                            </li>
+
+                            <li>
+                                DeepSORT
+                            </li>
+
+                            <li>
+                                OpenCV
+                            </li>
+
+                            <li>
+                                PyTorch
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Embedded &amp; IoT
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Raspberry Pi 5
+                            </li>
+
+                            <li>
+                                ESP32
+                            </li>
+
+                            <li>
+                                Embedded systems
+                            </li>
+
+                            <li>
+                                Wi-Fi communication
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Software &amp; Integration
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Python
+                            </li>
+
+                            <li>
+                                Flask
+                            </li>
+
+                            <li>
+                                Google Sheets
+                            </li>
+
+                            <li>
+                                REST / HTTP APIs
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="project-section project-section-alt">
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    System Demonstration
+                </p>
+
+                <h2>
+                    PPE detection and monitoring
+                </h2>
+
+                <p class="section-description">
+                    The completed system combined real-time PPE detection with a
+                    monitoring dashboard and structured data logging. The dashboard
+                    displayed detection status, detected PPE items, and violation
+                    warnings, while monitoring records were stored for later review.
+                </p>
+
+                <figure class="project-media-item">
+
+                    <img
+                        src="../images/ppe-monitoring/ppe-monitoring-dashboard.png"
+                        alt="PPE monitoring dashboard showing compliant and non-compliant detection results alongside recorded monitoring data"
+                    >
+
+                    <figcaption>
+                        Examples of PPE detection results, violation monitoring,
+                        and recorded system data.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- Reflection -->
+
+        <section class="project-section project-section-alt">
+
+            <div class="container">
+
+
+                <p class="section-eyebrow">
+                    Reflection
+                </p>
+
+
+                <h2>
+                    What I Learned
+                </h2>
+
+
+                <p class="section-description">
+
+                    This project gave me practical experience in connecting
+                    software, AI, IoT communication and embedded control
+                    into one engineering workflow.
+
+                </p>
+
+
+                <div class="learning-list">
+
+
+                    <div>
+
+                        <strong>
+                            01
+                        </strong>
+
+                        <p>
+
+                            Designing system workflows before implementation
+                            helped establish how independently developed
+                            subsystems should communicate and respond.
+
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            02
+                        </strong>
+
+                        <p>
+
+                            Integrating computer vision with a physical
+                            control system required thinking beyond model
+                            inference and considering how software decisions
+                            become real-world actions.
+
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            03
+                        </strong>
+
+                        <p>
+
+                            Supervising the team strengthened my ability
+                            to coordinate different technical contributions
+                            while keeping the overall system architecture
+                            and workflow aligned.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Navigation -->
+
+        <section class="project-next">
+
+            <div class="container">
+
+
+                <p>
+                    More Projects
+                </p>
+
+
+                <a href="../index.html#projects">
+                    ← Back to Projects
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
