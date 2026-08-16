@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>RTOS Pizza | Aziz Bin Adam</title>
+
+    <meta
+        name="description"
+        content="RTOS Pizza — a FreeRTOS firmware project on the RP2350 exploring concurrent task execution, semaphore synchronization, and embedded systems development."
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                Aziz Bin Adam
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="../index.html#about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#projects">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#experience">
+                        Experience
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#skills">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#achievements">
+                        Achievements
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Project Hero -->
+
+    <main>
+
+        <section class="project-hero">
+
+            <div class="container">
+
+                <a
+                    href="../index.html#projects"
+                    class="back-link"
+                >
+                    ← Back to Projects
+                </a>
+
+
+                <p class="intro">
+                    Embedded Systems · RTOS · Group Project
+                </p>
+
+
+                <h1>
+                    RTOS Pizza
+                </h1>
+
+
+                <p class="project-lead">
+
+                    A FreeRTOS-based embedded firmware project developed on
+                    the RP2350, modelling a pizza preparation workflow through
+                    concurrent tasks, semaphore-based synchronization, and
+                    a central coordinator task.
+
+                </p>
+
+
+                <div class="project-meta">
+
+                    <div>
+
+                        <span class="meta-label">
+                            Project Type
+                        </span>
+
+                        <span class="meta-value">
+                            University Group Project
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="meta-label">
+                            Role
+                        </span>
+
+                        <span class="meta-value">
+                            Firmware Development · System Integration
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="meta-label">
+                            Date
+                        </span>
+
+                        <span class="meta-value">
+                            Oct 2025 – Feb 2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Overview -->
+
+        <section class="project-section">
+
+            <div class="container">
+
+                <div class="project-layout">
+
+                    <div class="project-main">
+
+                        <p class="section-eyebrow">
+                            Overview
+                        </p>
+
+                        <h2>
+                            Exploring concurrent task execution with FreeRTOS
+                        </h2>
+
+                        <p>
+                            RTOS Pizza was developed as a university group
+                            project to explore real-time operating system
+                            concepts using FreeRTOS on the RP2350
+                            microcontroller platform.
+                        </p>
+
+                        <p>
+                            The system models a pizza preparation workflow
+                            using multiple concurrent tasks. Separate tasks
+                            simulate preparation activities for dough, sauce,
+                            and cheese, while a central "Chef" task coordinates
+                            the workflow and waits for all parallel activities
+                            to complete before continuing with the sequential
+                            assembly process.
+                        </p>
+
+                        <p>
+                            Rather than controlling physical robots, the project
+                            uses software tasks to demonstrate how a real-time
+                            system can coordinate multiple activities running
+                            concurrently.
+                        </p>
+
+                    </div>
+
+
+                    <aside class="project-sidebar">
+
+                        <div class="info-block">
+
+                            <h3>
+                                Hardware
+                            </h3>
+
+                            <p>
+                                Raspberry Pi Pico 2W / RP2350
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-block">
+
+                            <h3>
+                                Operating System
+                            </h3>
+
+                            <p>
+                                FreeRTOS
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-block">
+
+                            <h3>
+                                Language
+                            </h3>
+
+                            <p>
+                                C
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-block">
+
+                            <h3>
+                                Development Environment
+                            </h3>
+
+                            <p>
+                                Visual Studio Code · Raspberry Pi Pico SDK
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-block">
+
+                            <h3>
+                                Output
+                            </h3>
+
+                            <p>
+                                Serial output monitored using Tera Term
+                            </p>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Personal Contribution -->
+
+        <section class="project-section project-section-alt">
+
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    My Contribution
+                </p>
+
+                <h2>
+                    Firmware development and system integration
+                </h2>
+
+                <p class="section-description">
+
+                    My main contribution was on the software and firmware side,
+                    while also contributing to the overall system design and
+                    supervising the team's progress.
+
+                </p>
+
+
+                <div class="technology-grid">
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Firmware Development
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Developed the embedded C firmware for the
+                                RTOS-based workflow.
+                            </li>
+
+                            <li>
+                                Implemented the task structure used to model
+                                the pizza preparation process.
+                            </li>
+
+                            <li>
+                                Worked with FreeRTOS task creation,
+                                synchronization, and scheduling.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            RP2350 Platform Setup
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Set up the Raspberry Pi Pico SDK development
+                                environment.
+                            </li>
+
+                            <li>
+                                Retrieved and integrated the required SDK
+                                and supporting libraries.
+                            </li>
+
+                            <li>
+                                Adapted the project for the RP2350 platform,
+                                which had relatively limited reference
+                                material available during development.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            System Verification
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Built and ran the firmware during development.
+                            </li>
+
+                            <li>
+                                Monitored serial output using Tera Term to
+                                observe task execution and workflow progress.
+                            </li>
+
+                            <li>
+                                Used the output to verify the expected
+                                sequence and synchronization behaviour.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div><br>
+
+
+                <div class="limitations-note">
+
+                    <h4>
+                        Team contribution
+                    </h4>
+
+                    <p>
+                        This was a group project. My primary responsibility
+                        was firmware and software implementation, while I also
+                        contributed to the system-level design and supervised
+                        the team's progress. Other members contributed to
+                        different aspects of the project.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Development Challenge -->
+
+        <section class="project-section">
+
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    Engineering Challenge
+                </p>
+
+                <h2>
+                    Working with a relatively new microcontroller platform
+                </h2>
+
+                <div class="project-layout">
+
+                    <div class="project-main">
+
+                        <p>
+                            One of the practical challenges during development
+                            was working with the RP2350 platform at a relatively
+                            early stage of its adoption.
+                        </p>
+
+                        <p>
+                            Compared with more established Raspberry Pi
+                            microcontroller platforms, fewer examples and
+                            reference materials were available for some of
+                            the development requirements at the time.
+                        </p>
+
+                        <p>
+                            This meant that part of the development process
+                            involved setting up the Pico SDK environment,
+                            identifying the appropriate libraries and project
+                            configuration, and working through the available
+                            documentation to get the firmware running correctly
+                            on the target platform.
+                        </p>
+
+                    </div>
+
+
+                    <aside class="project-sidebar">
+
+                        <div class="info-block">
+
+                            <h3>
+                                Challenge
+                            </h3>
+
+                            <p>
+                                Limited reference material for the relatively
+                                new RP2350 platform.
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-block">
+
+                            <h3>
+                                Approach
+                            </h3>
+
+                            <p>
+                                SDK setup, library integration, documentation
+                                research, iterative development and testing.
+                            </p>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- System Architecture -->
+
+        <section class="project-section project-section-alt">
+
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    System Architecture
+                </p>
+
+                <h2>
+                    A fork-join workflow
+                </h2>
+
+                <p class="section-description">
+
+                    The firmware uses a central coordinator to launch parallel
+                    preparation tasks and synchronize their completion before
+                    moving into the sequential assembly stage.
+
+                </p>
+
+
+                <div class="arch-diagram">
+
+                    <p class="arch-label">
+                        Execution flow
+                    </p>
+
+
+                    <div class="arch-layers">
+
+                        <div class="arch-layer">
+
+                            <div class="arch-layer-tag">
+                                COORDINATOR
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Pizza Chef Task
+                                </h3>
+
+                                <p>
+                                    Creates the synchronization mechanism,
+                                    launches the worker tasks, waits for their
+                                    completion, and coordinates the assembly
+                                    stage.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="arch-connector">
+                            ↓ launches parallel tasks
+                        </div>
+
+
+                        <div class="arch-layer">
+
+                            <div class="arch-layer-tag">
+                                PARALLEL TASKS
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Dough · Sauce · Cheese
+                                </h3>
+
+                                <p>
+                                    Three independent FreeRTOS tasks simulate
+                                    preparation activities concurrently.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="arch-connector">
+                            ↓ completion signals through counting semaphore
+                        </div>
+
+
+                        <div class="arch-layer">
+
+                            <div class="arch-layer-tag">
+                                SYNCHRONIZATION
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Barrier Synchronization
+                                </h3>
+
+                                <p>
+                                    The Chef task waits until all three worker
+                                    tasks signal completion before continuing.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="arch-connector">
+                            ↓ all preparation tasks complete
+                        </div>
+
+
+                        <div class="arch-layer">
+
+                            <div class="arch-layer-tag">
+                                SEQUENTIAL
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Assembly Workflow
+                                </h3>
+
+                                <p>
+                                    The system proceeds through the remaining
+                                    pizza preparation stages in sequence.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Technical Implementation -->
+
+        <section class="project-section">
+
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    Technical Implementation
+                </p>
+
+                <h2>
+                    FreeRTOS primitives in embedded C
+                </h2>
+
+                <div class="technology-grid">
+
+                    <div class="technology-card">
+
+                        <h3>
+                            FreeRTOS Tasks
+                        </h3>
+
+                        <p>
+                            Separate tasks were used to represent the
+                            concurrent preparation activities, allowing
+                            multiple simulated operations to execute under
+                            the RTOS scheduler.
+                        </p>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Counting Semaphore
+                        </h3>
+
+                        <p>
+                            A FreeRTOS counting semaphore was used as a
+                            synchronization barrier, allowing the coordinator
+                            to wait until all three preparation tasks had
+                            completed.
+                        </p>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Dynamic Task Lifecycle
+                        </h3>
+
+                        <p>
+                            Worker tasks are created for each order cycle and
+                            removed after completing their simulated work,
+                            demonstrating dynamic task management.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Results -->
+
+        <section class="project-section project-section-alt">
+
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    Results &amp; Analysis
+                </p>
+
+                <h2>
+                    Parallel execution reduces the critical path
+                </h2>
+
+                <p class="section-description">
+
+                    The project compared the sequential and parallel execution
+                    models to demonstrate the effect of concurrent task
+                    execution.
+
+                </p>
+
+
+                <div class="results-stats">
+
+                    <div class="stat-card">
+
+                        <div class="stat-value">
+                            6 s
+                        </div>
+
+                        <div class="stat-label">
+                            Theoretical sequential execution time
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-value">
+                            3 s
+                        </div>
+
+                        <div class="stat-label">
+                            Modelled parallel execution time
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-value">
+                            50%
+                        </div>
+
+                        <div class="stat-label">
+                            Modelled latency reduction
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-value">
+                            3
+                        </div>
+
+                        <div class="stat-label">
+                            Parallel preparation tasks
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="limitations-note">
+
+                    <h4>
+                        Interpreting the result
+                    </h4>
+
+                    <p>
+                        The 6-second versus 3-second comparison represents
+                        theoretical and modelled execution behaviour based on
+                        the task durations. It should not be interpreted as a
+                        measured 50% hardware performance improvement.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Development Tools -->
+
+        <section class="project-section">
+
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    Development Environment
+                </p>
+
+                <h2>
+                    Tools used during development
+                </h2>
+
+                <div class="project-media">
+
+                    <figure class="project-media-item">
+
+                        <img
+                            src="../images/rtos-pizza/rtos-pizza-development.jpg"
+                            alt="RTOS_Pizza development environment showing embedded C code in Visual Studio Code, Raspberry Pi Pico hardware, and Tera Term output"
+                            style="height: 950px;"
+                        >
+                                            
+                        <figcaption>
+                            Development environment for RTOS_Pizza, showing embedded C development
+                            in Visual Studio Code, the Raspberry Pi Pico hardware, and serial output
+                            through Tera Term.
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+                <div class="technology-grid">
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Visual Studio Code
+                        </h3>
+
+                        <p>
+                            Primary development environment used to write,
+                            organise, build, and work with the embedded firmware
+                            project.
+                        </p>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Raspberry Pi Pico SDK
+                        </h3>
+
+                        <p>
+                            Used as the software development framework for
+                            targeting the Raspberry Pi microcontroller platform
+                            and integrating the required hardware libraries.
+                        </p>
+
+                    </div>
+
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Tera Term
+                        </h3>
+
+                        <p>
+                            Used to monitor serial output from the embedded
+                            system and observe the progress of the simulated
+                            pizza preparation workflow.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Reflection -->
+
+        <section class="project-section project-section-alt">
+
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    Reflection
+                </p>
+
+                <h2>
+                    What I Learned
+                </h2>
+
+                <p class="section-description">
+
+                    RTOS Pizza strengthened my understanding of how embedded
+                    firmware can coordinate multiple concurrent operations and
+                    how development challenges can arise from the platform
+                    itself, not only from the application logic.
+
+                </p>
+
+
+                <div class="learning-list">
+
+                    <div>
+
+                        <strong>
+                            01
+                        </strong>
+
+                        <p>
+                            Applying FreeRTOS task scheduling and synchronization
+                            concepts in an embedded firmware environment.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            02
+                        </strong>
+
+                        <p>
+                            Working through a less-established development
+                            platform by researching documentation and configuring
+                            the required SDK and libraries.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            03
+                        </strong>
+
+                        <p>
+                            Balancing hands-on firmware development with
+                            system-level design and team supervision.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Project Navigation -->
+
+        <section class="project-next">
+
+            <div class="container">
+
+                <p>
+                    More Projects
+                </p>
+
+                <a href="../index.html#projects">
+                    ← Back to Projects
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
